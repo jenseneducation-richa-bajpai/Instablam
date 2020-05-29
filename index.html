@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instablam</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="manifest" href="manifest.json" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/icons/Instablam-favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/icons/Instablam-favicon-16x16.png"
+    />
+    <meta name="theme-color" content="#231f42" />
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Instablam</h1>
+    </header>
+
+    <main class="wrapper1">
+      <h2 class="photo">Take a photo</h2>
+    </main>
+
+    <section class="wrapper">
+      <video id="me" class="camera"></video>
+
+      <button id="addImage" class="button">Take a screenshot!</button>
+
+      <canvas id="photo" width="100%" height="auto"></canvas>
+
+      <div class="filters">
+        <div class="filter">
+          <label for="brightness">Brightness</label>
+          <input
+            type="range"
+            min="-100"
+            max="100"
+            value="0"
+            id="brightness"
+            data-filter="brightness"
+          />
+        </div>
+        <div class="filter">
+          <label for="contrast">Contrast</label>
+          <input
+            type="range"
+            min="-100"
+            max="100"
+            id="contrast"
+            step="1"
+            value="0"
+            data-filter="contrast"
+          />
+        </div>
+        <div class="filter">
+          <label for="hue">Hue </label>
+
+          <input
+            type="range"
+            min="-100"
+            max="100"
+            id="hue"
+            step="1"
+            value="0"
+            data-filter="hue"
+          />
+        </div>
+        <div class="filter">
+          <label for="sepia">Sepia</label>
+          <input
+            type="range"
+            min="-100"
+            max="100"
+            id="sepia"
+            step="1"
+            value="0"
+            data-filter="sepia"
+          />
+        </div>
+        <div class="filter">
+          <label for="exposure">Exposure</label>
+          <input
+            type="range"
+            min="-100"
+            max="100"
+            id="exposure"
+            step="1"
+            value="0"
+            id="exposure"
+            data-filter="exposure"
+          />
+        </div>
+        <div class="filter">
+          <label for="stackBlur">stackBlur</label>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            id="stackBlur"
+            step="1"
+            value="0"
+            data-filter="stackBlur"
+          />
+        </div>
+      </div>
+
+      <div class="btn">
+        <button id="download" class="button">Download Image</button>
+        <button id="removeFilter" class="button red">Remove Filters</button>
+      </div>
+      <h3 class="offline hide">Unable to download in offline mode!</h3>
+      <button id="test" class="button">Subscribe</button>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fac9ba;
+}
+
+h1,
+h2 {
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.heading {
+  text-align: center;
+  color: #660200;
+}
+
+.wrapper1 {
+  height: 20%;
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+video {
+  width: 90%;
+}
+.button {
+  width: 180px;
+  height: 32px;
+  padding: 5px;
+  margin: 1rem auto;
+  border-radius: 40px;
+  color: white;
+  background: black;
+  font-size: 16px;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+}
+
+canvas[style] {
+  width: 90% !important;
+  height: auto !important;
+  margin-bottom: 1.5rem;
+}
+
+.filters {
+  margin: auto;
+}
+
+.filter {
+  width: 300px;
+  display: flex;
+}
+label {
+  margin: auto;
+  color: black;
+  font-size: 20px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.red {
+  background: red;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.offline {
+  color: saddlebrown;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    margin: 0 1rem 0 1rem;
+  }
+}
